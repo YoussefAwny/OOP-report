@@ -16,8 +16,8 @@ CColor::CColor(int r, int g, int b)
 CColor::CColor(int hexcolor)
 {
 	Color = hexcolor;
-	red = (hexcolor & 0x00FF0000)>>4;
-	green = (hexcolor & 0x0000FF00)>>2;
+	red = (hexcolor & 0x00FF0000)>>16;
+	green = (hexcolor & 0x0000FF00)>>8;
 	blue = (hexcolor & 0x000000FF);
 }
 

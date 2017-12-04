@@ -15,7 +15,8 @@ int main()
 	CColor c(0x00552211);
 	cout << "a color = " << a << endl; //should prints (255, 128, 192)
 //	cout << "b color = " << b("hex") << endl; //should prints 0x00667755
-											  //Make y = average of a and b and c
+	cout << "b color" << b << endl;										  //Make y = average of a and b and c
+	cout << "c color" << c << endl;
 	CColor y = average(a, b, c);
 	cout << "y color = " << y << endl;
     return 0;
